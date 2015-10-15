@@ -12,7 +12,7 @@ class CocktailsController < ApplicationController
   end
 
   def create
-    @cocktail = Cocktail.create(restaurant_params)
+    @cocktail = Cocktail.create(cocktail_params)
     @cocktail.save
     if @cocktail.valid?
       redirect_to cocktail_path(@cocktail)
