@@ -10,6 +10,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 ruby '2.2.3'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
 
 group :production do
 gem 'rails_12factor'
@@ -18,6 +21,7 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'better_errors'
 end
 
 group :development do
