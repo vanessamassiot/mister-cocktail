@@ -7,5 +7,5 @@ class Dose < ActiveRecord::Base
 
 
   validates :description, presence: true
-  validates :coktail && :ingredient, uniqueness: true
+  validates :cocktail && :ingredient, uniqueness: true
 end
