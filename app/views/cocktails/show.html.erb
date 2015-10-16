@@ -1,14 +1,8 @@
 <h1>Liste des doses et ingrédients</h1>
 <h2>nom du coktail : <%= @cocktail.name %></h2>
+<%= image_tag @cocktail.picture.url(:medium) %>
 
-<p>créer des ingrédients et les doses</p>
-
-
-
-
+<%= link_to "delete", {class: "btn btn-danger"} %>
+<%= link_to "update", {class: "btn btn-danger"} %>
 
 
-<%= check_box_tag(:pet_dog) %>
-<%= label_tag(:pet_dog, "I own a dog") %>
-<%= check_box_tag(:pet_cat) %>
-<%= label_tag(:pet_cat, "I own a cat") %>
