@@ -1,10 +1,12 @@
-<h1>Cocktails Del Arte</h1>
-<ul>
-<% @cocktails.each do |cocktail| %>
-  <h2>#<%= cocktail.id%> - <%= link_to cocktail.name, cocktail_path(cocktail) %>
+.container
+  .row
+    .text-center.padded
+      h1 Choose your cocktail
+    - @cocktails.each do |cocktail|
+      = render "cocktail", cocktail: cocktail
+  .row
+    .col-md-12
+      .text-center.padded
+        h3 Not find your cocktail ?
+        = link_to 'Add your cocktail', new_cocktail_path, class: 'navbar-wagon-item navbar-wagon-button btn'
 
-  </h2>
-<% end %>
-</ul>
-
-<%= link_to "create a new cocktail", new_cocktail_path, {class: "btn btn-danger"} %>
