@@ -1,2 +1,7 @@
 <h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+
+<ul>
+<% @doses.each do |d| %>
+  <h2>#<%= d.id%> - <%= d.name %></h2>
+<% end %>
+</ul>
